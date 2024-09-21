@@ -36,4 +36,4 @@ gameLoop(): Continuously updates the game state and calls the enemyAction() func
 - AI Dynamics: The AI opponent manages resources dynamically, adjusting priorities between military strength and worker management, ensuring a balanced and challenging gameplay experience.
 - Game Grid: The game takes place on a 10x10 grid. Cities are represented visually on the grid, with colors indicating player or enemy control.
   
-### Enjoy playing New Empire and may your empire stand the test of time!
+### The game is not finished but it is in development
