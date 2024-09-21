@@ -38,6 +38,7 @@ gameLoop(): Continuously updates the game state and calls the enemyAction() func
   
 ## Game Mechanics
 - Resource Management: Both players and AI collect resources such as wood, stone, and metal to build cities and grow armies. Each resource increases over time.
+- newempire.netlify.app
 - City Building: When enough resources are gathered, players and the AI can build new cities, expanding their empire.
 - AI Dynamics: The AI opponent manages resources dynamically, adjusting priorities between military strength and worker management, ensuring a balanced and challenging gameplay experience.
 - Game Grid: The game takes place on a 10x10 grid. Cities are represented visually on the grid, with colors indicating player or enemy control.
