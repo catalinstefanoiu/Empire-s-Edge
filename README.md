@@ -15,7 +15,8 @@ Open index.html in your browser to launch the game.
 ## How to Play
 The objective of the game is to build your empire by managing resources such as wood, stone, metal, glass, gold, and population. You will compete against AI-controlled enemies that also manage their own cities and resources.
 
-![image](https://github.com/user-attachments/assets/09781803-641d-49ce-9927-e4fe68ab6704)
+![image](https://github.com/user-attachments/assets/09c4864a-0f0e-44ce-8893-93b6dabe8d32)
+
 
 
 You start by controlling cities, workers, and armies.
