@@ -1,0 +1,209 @@
+<html>
+<head>  
+    <link rel="stylesheet" href="style.css">
+    <script src="enemycontroller.js"></script>
+    <script src="main.js"></script>
+</head>
+<body onload="Init()">
+<div id="main_wrapper" onload="mainWrapperLoaded()">
+    <div id="header_wrapper">
+      <div class="top_bar_content">Game Version:<br>0.7</div>
+      <div class="top_bar_content" id="title">Nations Game</div>
+      <div class="top_bar_content">
+        <div class="small_button_inline">New</div>
+        <div class="small_button_inline">Save</div>
+        <div class="small_button_inline">Load</div>
+      </div>
+    </div>
+    <div id ="game_wrapper">
+        <div id="game_screen">
+            <table id="map">
+                <tbody>
+                  <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td id="cell08"></td>
+                    <td id="cell09"></td>
+                  </tr>
+                  <tr>
+                    <td id="cell10"></td>
+                    <td id="cell11"></td>
+                    <td id="cell12"></td>
+                    <td id="cell13"></td>
+                    <td id="cell14"></td>
+                    <td id="cell15"></td>
+                    <td id="cell16"></td>
+                    <td id="cell17"></td>
+                    <td id="cell18"></td>
+                    <td id="cell19"></td>
+                  </tr>
+                  <tr>
+                    <td id="cell20"></td>
+                    <td id="cell21"></td>
+                    <td id="cell22"></td>
+                    <td id="cell23"></td>
+                    <td id="cell24"></td>
+                    <td id="cell25"></td>
+                    <td id="cell26"></td>
+                    <td id="cell27"></td>
+                    <td id="cell28"></td>
+                    <td id="cell29"></td>
+                  </tr>
+                  <tr>
+                    <td id="cell30"></td>
+                    <td id="cell31"></td>
+                    <td id="cell32"></td>
+                    <td id="cell33"></td>
+                    <td id="cell34"></td>
+                    <td id="cell35"></td>
+                    <td id="cell36"></td>
+                    <td id="cell37"></td>
+                    <td id="cell38"></td>
+                    <td id="cell39"></td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+                </table>
+        </div>
+        <div id="game_text">
+          <div class="side_bar_content">
+            <table>
+              <tbody>
+                <tr>
+                  <td class="table_data">Wood</td>
+                  <td class="table_data" id="wood_counter">10</td>
+                </tr>
+                <tr>
+                  <td class="table_data">Stone</td>
+                  <td class="table_data" id="stone_counter">10</td>
+                </tr>
+                <tr>
+                  <td class="table_data">Metal</td>
+                  <td class="table_data" id="metal_counter">10</td>
+                </tr>
+                <tr>
+                  <td class="table_data">Glass</td>
+                  <td class="table_data" id="glass_counter">10</td>
+                </tr>
+                <tr>
+                  <td class="table_data">Gold</td>
+                  <td class="table_data" id="gold_counter">10</td>
+                </tr>
+                <tr>
+                  <td class="table_data">Population</td>
+                  <td class="table_data" id="pop_counter">10</td>
+                </tr>
+              </tbody>
+              </table>
+          </div>
+          <div class="side_bar_content">
+            <div class="small_button_block" onclick="BuildCity()">City</div>
+            <div class="small_button_block" onclick="menuSwitch()">Build/Army</div>
+            <div class="small_button_block" onclick="destroyCity()">Destroy</div>
+          </div>
+          <div class="side_bar_content">
+            <table id="armybuild">
+              <tbody>
+                <tr>
+                  <td class="table_data" id="mine_inf_name"></td>
+                  <td class="table_data" id="mine_inf_val" ></td>
+                  <td class="table_data_center" id="mine_inf_build" onclick="buyMineInf()"></td>
+                </tr>
+                <tr>
+                  <td class="table_data" id="wood_cav_name"></td>
+                  <td class="table_data" id="wood_cav_val"></td>
+                  <td class="table_data_center" id="wood_cav_build" onclick="buyWoodCav()"></td>
+                </tr>
+                <tr>
+                  <td class="table_data" id="civ_art_name"></td>
+                  <td class="table_data" id="civ_art_val"></td>
+                  <td class="table_data_center" id="civ_art_build" onclick="buyCivArt()"></td>
+                </tr>
+              </tbody>
+              </table>
+          </div>
+          <div class="side_bar_content" id="credits">
+            Andrei Ionut<br>CySec-2022
+          </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

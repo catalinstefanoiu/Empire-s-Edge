@@ -1,0 +1,165 @@
+body{
+    height:100%;
+    background-color: #596e79;
+}
+table{
+    margin:1%;
+    width:98%;
+    height:98%;
+    table-layout: fixed;
+}
+td{
+    border: 1px solid;
+    border-color: black;
+    background-color: green;
+    height:3rem;
+    width:3rem;
+}
+#credits{
+    text-align: center;
+    font-size: 2em;
+}
+#title{
+    text-align: center;
+    font-size: 2em;
+}
+#main_wrapper{
+    WIDTH: 100%;
+    HEIGHT:100%;
+    background-color: #596e79;
+}
+#header_wrapper{
+
+    width:99%;
+    height:19%;
+    background-color: #c7b198;
+    margin-bottom:1%
+}
+#game_wrapper{
+
+    width:99%;
+    height:80%;
+    background-color:#c7b198;
+}
+#game_screen{
+    margin:1%;
+    width:78%;
+    height:97%;
+    float:left;
+    background-color: #dfd3c3;
+}
+#game_text{
+    float:left;
+    width:19%;
+    height:97%;
+    margin-right:1%;
+    margin-top:1%;
+    margin-bottom:1%;
+    background-color: #dfd3c3;
+}
+.top_bar_content{
+    display: inline-block;
+    width: 31%;
+    height: 100%;
+    margin-left: 1%;
+    margin-right:1%;
+    background-color: bisque;
+    vertical-align: top;
+    text-align: center;
+}
+.side_bar_content{
+    display: block;
+    width:100%;
+    height:23%;
+    margin-top:4%;
+    margin-bottom:4%;
+    background-color: bisque;
+}
+.small_button_block{
+    display: block;
+    width:80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    height:23%;
+    margin-top:4%;
+    margin-bottom:4%;
+    background-color: chocolate;
+    border-radius: 5px;
+    border:outset ;
+    text-align: center;
+    font-size: 200%;
+}
+.small_button_block:hover{
+    display: block;
+    width:80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    height:23%;
+    margin-top:4%;
+    margin-bottom:4%;
+    background-color: rgb(192, 83, 5);
+    border-radius: 5px;
+    border:outset ;
+    text-align: center;
+    font-size: 200%;
+}
+.small_button_inline:hover{
+    display: inline-block;
+    width:80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    height:21%;
+    margin-top:2%;
+    margin-bottom:1%;
+    background-color: rgb(192, 83, 5);
+    border-radius: 5px;
+    border:outset ;
+    text-align: center;
+    font-size: 200%;
+}
+.small_button_inline{
+    display: inline-block;
+    width:80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    height:21%;
+    margin-top:2%;
+    margin-bottom:1%;
+    background-color: chocolate;
+    border-radius: 5px;
+    border:outset ;
+    text-align: center;
+    font-size: 200%;
+}
+.table_data{
+    background-color: whitesmoke;
+    border: 1px solid;
+    border-color: black;
+    width:100%;
+    height:auto;
+    text-align: center;
+}
+.table_data_center{
+    background-color: rgb(235, 232, 232);
+    border: 1px solid;
+    border-color: black;
+    width:100%;
+    height:auto;
+    text-align: center;
+}
+.table_data_center:hover{
+    background-color: rgb(204, 202, 202);
+    border: 1px solid;
+    border-color: black;
+    width:100%;
+    height:auto;
+    text-align: center;
+}
+.clicked{
+    border-color:red;
+}
+
+.city {
+        background-color: orange; 
+    }
+    
