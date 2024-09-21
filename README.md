@@ -1,0 +1,49 @@
+# New Empire
+New Empire is a strategy game where players and AI-controlled enemies build cities, manage resources, and grow their armies. The AI will dynamically adjust its resource allocation based on its needs, and both players and enemies compete for dominance by expanding their empires.
+
+## Files
+- index.html
+- main.js
+- enemycontroller.js
+- style.css
+## Game Mechanics
+### Installation
+Clone or download the repository.
+Open index.html in your browser to launch the game.
+## How to Play
+The objective of the game is to build your empire by managing resources such as wood, stone, metal, glass, gold, and population. You will compete against AI-controlled enemies that also manage their own cities and resources.
+
+You start by controlling cities, workers, and armies.
+Resources are gathered and used to expand your empire by building more cities.
+The enemy AI builds cities when it has sufficient resources, and manages both workers and armies dynamically.
+
+index.html
+This file sets up the main structure of the game interface. It contains the grid-based game board where cities are placed and resources are managed.
+
+Key elements:
+
+A grid of tiles where cities can be built.
+Classes to differentiate between different tile types (first_city, city, etc.).
+main.js
+This file handles the player's actions and the overall game loop.
+
+Key functions:
+
+initializeGame(): Sets up the initial game state, including player resources and the game board.
+buildCity(): Allows players to build cities if they have enough resources. Updates the board and resource counts accordingly.
+gameLoop(): Continuously updates the game state and calls the enemyAction() function to manage the enemy's moves.
+enemycontroller.js
+This file manages the AI opponent's actions and resource allocation.
+
+Key features:
+
+enemyInit(): Initializes enemy resources.
+calculateWeights(): Adjusts the AI's priorities between military and worker allocation.
+enemyAction(): Makes decisions for the AI to increase resources or build cities based on weights.
+buildEnemyCity(): If the AI has enough resources, it attempts to build a city on an available tile.
+Game Mechanics
+Resource Management: Both players and AI collect resources such as wood, stone, and metal to build cities and grow armies. Each resource increases over time.
+City Building: When enough resources are gathered, players and the AI can build new cities, expanding their empire.
+AI Dynamics: The AI opponent manages resources dynamically, adjusting priorities between military strength and worker management, ensuring a balanced and challenging gameplay experience.
+Game Grid: The game takes place on a 10x10 grid. Cities are represented visually on the grid, with colors indicating player or enemy control.
+Enjoy playing New Empire and may your empire stand the test of time!
