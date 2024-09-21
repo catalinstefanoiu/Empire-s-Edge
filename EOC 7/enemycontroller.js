@@ -32,8 +32,8 @@ function enemyInit() {
     enemyvalues.resources.stone = 100;
     enemyvalues.resources.metal = 100;
     enemyvalues.resources.glass = 100;
-    enemyvalues.resources.gold = 100;
-    enemyvalues.resources.population = 100;
+    enemyvalues.resources.gold = 10;
+    enemyvalues.resources.population = 10;
 }
 
 function calculateWeights() {
@@ -113,17 +113,20 @@ function updateEnemyResources() {
     enemyvalues.resources.gold += Math.floor(Math.random() * 5);
     enemyvalues.resources.population += Math.floor(Math.random() * 2);
 
+    // Verifică resursele inamicului
     console.log(`Resurse inamic:`, enemyvalues.resources);
 }
 
 
 
 function buildEnemyCity() {
+    // Verificăm dacă inamicul are suficiente resurse
     if (enemyvalues.resources.wood >= 5 && enemyvalues.resources.stone >= 5) {
-
+        // Decrementăm resursele
         enemyvalues.resources.wood -= 5;
         enemyvalues.resources.stone -= 5;
 
+        // Găsim coordonate aleatorii pentru oraș
         let x, y;
         let isValidLocation = false;
         for (let attempt = 0; attempt < 10; attempt++) {
@@ -131,16 +134,19 @@ function buildEnemyCity() {
             y = Math.floor(Math.random() * 10);
             let cell = document.getElementById(`cell${x}${y}`);
 
+            // Verificăm dacă celula este liberă
             if (cell && !cell.classList.contains('city')) {
                 isValidLocation = true;
+                break; // Ieșim din buclă dacă găsim o celulă validă
             }
         }
 
         if (isValidLocation) {
             let cell = document.getElementById(`cell${x}${y}`);
-            cell.classList.add('city');
-            cell.style.backgroundColor = 'orange';
+            cell.classList.add('city'); // Adăugăm clasa pentru oraș
+            cell.style.backgroundColor = 'orange'; // Setăm culoarea orașului
 
+            // Afișăm coordonatele orașului inamic
             console.log(`Inamicul a construit un oraș la coordonatele (${x}, ${y})`);
         }
     } else {
