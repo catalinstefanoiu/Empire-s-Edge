@@ -22,8 +22,6 @@ The enemy AI builds cities when it has sufficient resources, and manages both wo
 initializeGame(): Sets up the initial game state, including player resources and the game board.
 buildCity(): Allows players to build cities if they have enough resources. Updates the board and resource counts accordingly.
 gameLoop(): Continuously updates the game state and calls the enemyAction() function to manage the enemy's moves.
-## enemycontroller.js
-This file manages the AI opponent's actions and resource allocation.
 
 ## Key features:
 
