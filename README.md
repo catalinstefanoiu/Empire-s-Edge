@@ -1,6 +1,8 @@
 # New Empire
 New Empire is a strategy game where players and AI-controlled enemies build cities, manage resources, and grow their armies. The AI will dynamically adjust its resource allocation based on its needs, and both players and enemies compete for dominance by expanding their empires.
 
+![image](https://github.com/user-attachments/assets/372c8a61-67c4-462e-8771-da62fad69d76)
+
 ## Files
 - index.html
 - main.js
@@ -12,6 +14,9 @@ Clone or download the repository.
 Open index.html in your browser to launch the game.
 ## How to Play
 The objective of the game is to build your empire by managing resources such as wood, stone, metal, glass, gold, and population. You will compete against AI-controlled enemies that also manage their own cities and resources.
+
+![image](https://github.com/user-attachments/assets/09781803-641d-49ce-9927-e4fe68ab6704)
+
 
 You start by controlling cities, workers, and armies.
 Resources are gathered and used to expand your empire by building more cities.
